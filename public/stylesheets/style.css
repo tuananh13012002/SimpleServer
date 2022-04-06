@@ -1,0 +1,89 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.content form {
+    text-align: center;
+    padding: 5px;
+    width: 50%;
+
+}
+
+.content input {
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    width: 50%;
+    background-color: #ffffff;
+    border: 1px solid black;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.btnSave {
+    margin-top: 10px;
+    border: 0px;
+    padding: 5px 30px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+    box-shadow: 0px 1px 10px #656363;
+}
+
+.btnSave:hover {
+    margin-top: 10px;
+    border: 0px;
+    padding: 5px 30px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.divCar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.divCar form{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 50%;
+}
+.divCar form input{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.btn button{
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+}
+.btn button:hover{
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
