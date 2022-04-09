@@ -118,6 +118,27 @@ router.post('/addCar', function (req, res) {
     // })
 
 })
+router.post('/them', function (req, res) {
+    var tenAnh = req.body.tenAnh;
+    var noiDung = req.body.noiDung;
+    var linkAnh = req.body.linkAnh;
+    const car = new Car({
+        tenAnh: tenAnh,
+        noiDung: noiDung,
+        linkAnh: linkAnh
+    })
+    car.save(function (err) {
+        res.send({
+            title:err.mes,
+            mes:'thành công'
+        })
+    })
+
+    // Car.updateOne({id:'623ed30ce431890f1cf413b1'},function (err){
+    //
+    // })
+
+})
 router.post("/delete", function (req, res) {
     Car.deleteOne({_id: req.body.id})
         .then(result => {
