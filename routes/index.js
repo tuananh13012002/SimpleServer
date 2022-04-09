@@ -180,7 +180,7 @@ router.post('/upload', function (req, res, next) {
 });
 router.get('/getAll', function (req, res) {
     Car.find({}, function (err, data) {
-        res.render(data)
+        res.send(data)
     })
 });
 module.exports = router;
