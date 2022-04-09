@@ -125,9 +125,9 @@ router.post("/delete", function (req, res) {
         })
         .catch(err => console.log(err))
 })
-router.get('/update', function (req, res, next) {
-    res.render('update', {title: ''});
-});
+// router.get('/update', function (req, res, next) {
+//     res.render('update', {title: ''});
+// });
 router.post("/update", function (req, res) {
     Car.findById({_id: req.body.id}, function (err, data) {
         if (err) {
@@ -176,6 +176,11 @@ router.post('/upload', function (req, res, next) {
         } else {
             res.render('upload', {title: 'tải thành công'});
         }
+    })
+});
+router.get('/getAll', function (req, res) {
+    Car.find({}, function (err, data) {
+        res.render(data)
     })
 });
 module.exports = router;
